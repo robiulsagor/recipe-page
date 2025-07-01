@@ -59,25 +59,25 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 100px 0;
 }
 
 .card {
   width: 700px;
   padding: 30px;
-  margin: 50px 0;
-  border-radius: 10px;
+  border-radius: 20px;
   background: var(--white);
   box-shadow: 0 0 10px var(--stone-100);
 }
 
 .card__image {
   width: 100%;
-  border-radius: 10px;
+  border-radius: 20px;
 }
 
 .card__title {
   margin-top: 15px;
-  font-size: 2rem;
+  font-size: 2.3rem;
   color: var(--stone-900);
   font-weight: 500;
 }
@@ -180,7 +180,7 @@ body {
   }
 
   .card__title {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
   }
 
   .heading_2 {
@@ -189,5 +189,11 @@ body {
 
   .nutrition__table tr td {
     font-size: 0.9rem;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .card__title {
+    font-size: 1.5rem;
   }
 }
