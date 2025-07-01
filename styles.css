@@ -34,6 +34,14 @@
   font-family: "Outfit", serif;
 }
 
+.heading_2 {
+  font-size: 1.8rem;
+  color: var(--brown-800);
+  font-weight: 500;
+  font-family: "Young Serif", serif;
+  margin-top: 20px;
+}
+
 body {
   font-family: "Outfit", serif;
 }
@@ -48,8 +56,9 @@ body {
 }
 
 .card {
-  width: 500px;
-  padding: 20px;
+  width: 700px;
+  padding: 30px;
+  margin: 50px 0;
   border-radius: 10px;
   background: var(--white);
   box-shadow: 0 0 10px var(--stone-100);
@@ -62,11 +71,12 @@ body {
 
 .card__title {
   margin-top: 15px;
-  font-size: 1.8rem;
+  font-size: 2rem;
   color: var(--stone-900);
+  font-weight: 500;
 }
 
-.card__desc {
+.paragraph_1 {
   margin-top: 15px;
   color: var(--stone-600);
 }
@@ -85,7 +95,8 @@ body {
 }
 
 .preparation ul,
-.ingredients ul {
+.ingredients ul,
+.instructions ul {
   margin-left: 20px;
   display: flex;
   flex-direction: column;
@@ -94,24 +105,55 @@ body {
 }
 
 .preparation ul li,
-.ingredients ul li {
+.ingredients ul li,
+.instructions ul li {
   color: var(--stone-600);
   padding-left: 10px;
 }
 
-.preparation ul li span {
+.preparation ul li span,
+.instructions ul li span {
   font-weight: 600;
 }
 
 /* ingredients section */
-.ingredients {
-  margin-top: 20px;
+.ingredients,
+.instructions {
   border-bottom: 1px solid var(--stone-100);
   padding-bottom: 15px;
 }
 
-.ingredients__text__title {
-  font-size: 1.5rem;
+.nutrition__table {
+  width: 100%;
+  margin-top: 15px;
+}
+
+.nutrition__table tr {
+  position: relative;
+  padding: 60px 0;
+}
+
+.nutrition__table tr td {
+  padding: 10px;
+  color: var(--stone-600);
+  font-size: 1rem;
+  border: none;
+}
+.nutrition__table tr::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 1px;
+  background-color: var(--stone-150);
+  bottom: 0;
+  left: 0;
+}
+
+.nutrition__table tr:last-child::after {
+  display: none;
+}
+
+.nutrition__table tr td:last-child {
+  font-weight: 600;
   color: var(--brown-800);
-  font-weight: 500;
 }
